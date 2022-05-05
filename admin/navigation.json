@@ -1,0 +1,17 @@
+{
+  "section": "analytics",
+  "titleId": "admin-personify.navigation.label-group",
+  "searchKeyWordsHelpers": "admin-personify.navigation.search.kws",
+  "subSectionItems": [
+    {
+      "labelId": "admin-personify.navigation.track",
+      "path": "/admin/personify/tracking",
+      "searchKeyWordsHelpers": "admin-personify.navigation.table.search.kws"
+    },
+    {
+      "labelId": "admin-personify.navigation.recommend",
+      "path": "/admin/personify/recommendation",
+      "searchKeyWordsHelpers": "admin-personify.navigation.table.search.kws"
+    }
+  ]
+}

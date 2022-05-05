@@ -1,0 +1,8 @@
+{
+  "pixel.personify": {
+    "component": "index"
+  },
+  "personify": {
+    "component": "hWStore"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "admin.app.track": {
+    "component": "hWAdmin",
+    "path": "/admin/app/personify/tracking"
+  },
+  "admin.app.recommend": {
+    "component": "hWAdmin",
+    "path": "/admin/app/personify/recommendation"
+  }
+}
