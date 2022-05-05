@@ -1,99 +1,106 @@
 <script>
   (function() {
-        //   var configTracking = {
-    //   pages: {
-    //     'view basket':{
-    //       name: 'View Basket',
-    //       type: 'basket',
-    //       getBasket: getBasket,
-    //       isPage: document.querySelector("#cart-title"),
-    //       track: true,
-    //     },
-    //     'pdp': {
-    //       name: 'Product Detail Page',
-    //       type: 'pdp',
-    //       getProductCode: function() {try {return document.querySelector(".vtex-product-identifier-0-x-product-identifier__value").innerText.trim();} catch (e) { return ""}},
-    //       getCategory: function() {try {return document.querySelectorAll(".vtex-breadcrumb-1-x-link")[1].pathname.substring(1).trim();} catch(e) { return "" }},
-    //       getProductDescription: function() {try {return document.querySelector(".border-grays-200 .text-grays-600").innerText.trim();} catch(e){return "";}},
-    //       getProductName: function() {try {return document.querySelector(".vtex-store-components-3-x-productBrand").innerText.trim();} catch (e) { return ""}},
-    //       getProductImage: function() {try { return document.querySelector('.vtex-store-components-3-x-productImageTag').src.trim();} catch(e) {return "";}},
-    //       getProductPrice: function() {try {return document.querySelector('.vtex-product-price-1-x-sellingPriceValue').innerText.substring(1).trim().split(',').join("")} catch (e) { return ""}},
-    //       isPage: window.location.pathname.split("/")[2] == "p",
-    //       track: true,
-    //             execute: function(){
-    //                 document.querySelector(".vtex-button").addEventListener("click", function(){
-    //                     if (document.querySelectorAll(".vtex-button").innerText == "ADD TO CART"){
-    //                         personifyTracking.action("add-basket")
-    //                     }
-    //                 });
-    //             }
-    //     },
-    //     'plp': {
-    //       name: 'Category Page',
-    //       type: 'category',
-    //       getCategoryName: function() {try {return document.querySelectorAll(".vtex-breadcrumb-1-x-link")[1].pathname.substring(1)} catch(e) { return "" }},
-    //       isPage: (document.querySelectorAll(".vtex-breadcrumb-1-x-link")[1].pathname.substring(1)===window.location.pathname.split("/")[1]),
-    //       track: true,
-    //     },
-    //   },
-    //   actions: {
-    //     'add-basket': {
-    //       type: 'addbasket',
-    //       getProductName: function() {try {return document.querySelector(".vtex-store-components-3-x-productBrand").innerText.trim();} catch (e) { return ""}},
-    //       getCategory: function() {try {return document.querySelectorAll(".vtex-breadcrumb-1-x-link")[1].pathname.substring(1).trim();} catch(e) { return "" }},
-    //       getUnitPrice: function() {try {return document.querySelector('.vtex-product-price-1-x-sellingPriceValue').innerText.substring(1).trim().split(',').join("")} catch(e) {return ""}}, 
-    //       getQuantity: function() {try{return 1} catch(e){return "1"}},
-    //     }
-    //   },
-    //   getCurrentProduct: function(){ try {return ;} catch (e) { return ""; } },
-    //   getUserID: function(){ return "UNKNOWN"; },
-    //   removeElements: [], //list of elements to remove, for debug use mostly if the script is run multiple times
-    //   trackElements: [],	//elements to attach listeners on clicks and views, used primarily for recommendation carousels. Will only run if recs/cats/bundles are displayed
-    //   geocode: '', //OPTIONAL: country of user
-    //   api: "https://7psdlol2g1.execute-api.eu-west-1.amazonaws.com/vtex-us-realtime-prod", //api endpoint
-    //   debug: true, //this switches on any calls to personify.debug to be printed to console
-    //   screenBreak: 600,
-    // };
-    // function loadScript(url, callback) {
-    //   var head = document.head;
-    //   var script = document.createElement('script');
-    //   script.type = 'text/javascript';
-    //   script.src = url;
-    //   script.onreadystatechange = callback;
-    //   script.onload = callback;
-    //   head.appendChild(script);
-    // }
+    var appId = "{{settings.personifyId}}";
+    if (!appId) {
+      console.error('Warning: No APP NAME ID is defined. Please configure it in the apps admin.');
+      return
+    }
 
-    // var personifyTracking;
+    var configTracking = {
+      pages: {
+        'view basket':{
+          name: 'View Basket',
+          type: 'basket',
+          getBasket: getBasket,
+          isPage: document.querySelector("#cart-title"),
+          track: true,
+        },
+        'pdp': {
+          name: 'Product Detail Page',
+          type: 'pdp',
+          getProductCode: function() {try {return document.querySelector(".vtex-product-identifier-0-x-product-identifier__value").innerText.trim();} catch (e) { return ""}},
+          getCategory: function() {try {return document.querySelectorAll(".vtex-breadcrumb-1-x-link")[1].pathname.substring(1).trim();} catch(e) { return "" }},
+          getProductDescription: function() {try {return document.querySelector(".border-grays-200 .text-grays-600").innerText.trim();} catch(e){return "";}},
+          getProductName: function() {try {return document.querySelector(".vtex-store-components-3-x-productBrand").innerText.trim();} catch (e) { return ""}},
+          getProductImage: function() {try { return document.querySelector('.vtex-store-components-3-x-productImageTag').src.trim();} catch(e) {return "";}},
+          getProductPrice: function() {try {return document.querySelector('.vtex-product-price-1-x-sellingPriceValue').innerText.substring(1).trim().split(',').join("")} catch (e) { return ""}},
+          isPage: window.location.pathname.split("/")[2] == "p",
+          track: true,
+                execute: function(){
+                    document.querySelector(".vtex-button").addEventListener("click", function(){
+                        if (document.querySelectorAll(".vtex-button").innerText == "ADD TO CART"){
+                            personifyTracking.action("add-basket")
+                        }
+                    });
+                }
+        },
+        'plp': {
+          name: 'Category Page',
+          type: 'category',
+          getCategoryName: function() {try {return document.querySelectorAll(".vtex-breadcrumb-1-x-link")[1].pathname.substring(1)} catch(e) { return "" }},
+          isPage: (document.querySelectorAll(".vtex-breadcrumb-1-x-link")[1].pathname.substring(1)===window.location.pathname.split("/")[1]),
+          track: true,
+        },
+      },
+      actions: {
+        'add-basket': {
+          type: 'addbasket',
+          getProductName: function() {try {return document.querySelector(".vtex-store-components-3-x-productBrand").innerText.trim();} catch (e) { return ""}},
+          getCategory: function() {try {return document.querySelectorAll(".vtex-breadcrumb-1-x-link")[1].pathname.substring(1).trim();} catch(e) { return "" }},
+          getUnitPrice: function() {try {return document.querySelector('.vtex-product-price-1-x-sellingPriceValue').innerText.substring(1).trim().split(',').join("")} catch(e) {return ""}}, 
+          getQuantity: function() {try{return 1} catch(e){return "1"}},
+        }
+      },
+      getCurrentProduct: function(){ try {return ;} catch (e) { return ""; } },
+      getUserID: function(){ return "UNKNOWN"; },
+      removeElements: [], //list of elements to remove, for debug use mostly if the script is run multiple times
+      trackElements: [],	//elements to attach listeners on clicks and views, used primarily for recommendation carousels. Will only run if recs/cats/bundles are displayed
+      geocode: '', //OPTIONAL: country of user
+      api: "https://7psdlol2g1.execute-api.eu-west-1.amazonaws.com/vtex-us-realtime-prod", //api endpoint
+      debug: true, //this switches on any calls to personify.debug to be printed to console
+      screenBreak: 600,
+    };
+    function loadScript(url, callback) {
+      var head = document.head;
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = url;
+      script.onreadystatechange = callback;
+      script.onload = callback;
+      head.appendChild(script);
+    }
 
-    // var postPersonifyLoadTracking = function() {
-    //   personifyTracking = new PersonifyXP(configTracking);
-    //     setTimeout(function(){personifyTracking.init();}, 1000)
-    // };
+    var personifyTracking;
 
-    // if( typeof(PersonifyXP) == "undefined" ){ 
-    //   loadScript("https://www.personifyxpassets.com/personify.library.0.22.js", postPersonifyLoadTracking);
-    // }
-    // else {
-    //   postPersonifyLoadTracking();
-    // }
+    var postPersonifyLoadTracking = function() {
+      personifyTracking = new PersonifyXP(configTracking);
+        setTimeout(function(){personifyTracking.init();}, 1000)
+    };
+
+    if( typeof(PersonifyXP) == "undefined" ){ 
+      loadScript("https://www.personifyxpassets.com/personify.library.0.22.js", postPersonifyLoadTracking);
+    }
+    else {
+      postPersonifyLoadTracking();
+    }
     
-    // function getBasket(){
-    //   var basket = [];
-    //     var products = document.querySelector('.cart-items').tBodies[0].children;
-    //     for (var i = 0; i < products.length; i++){
-    //         if (products[i].querySelector('.product-name')){
-    //             basket.push(
-    //               {
-    //                 productid: products[i].querySelector('.product-name a').id.trim(),
-    //                 quantity: products[i].querySelector('.quantity').getElementsByTagName('input')[0].value.trim(),
-    //                 unitprice: products[i].querySelector('.total-selling-price').innerText.substring(1).split(',').join('').trim()
-    //             }
-    //             );
-    //         }
-    //     }
-    //   return basket;
-    // }
+    function getBasket(){
+      var basket = [];
+        var products = document.querySelector('.cart-items').tBodies[0].children;
+        for (var i = 0; i < products.length; i++){
+            if (products[i].querySelector('.product-name')){
+                basket.push(
+                  {
+                    productid: products[i].querySelector('.product-name a').id.trim(),
+                    quantity: products[i].querySelector('.quantity').getElementsByTagName('input')[0].value.trim(),
+                    unitprice: products[i].querySelector('.total-selling-price').innerText.substring(1).split(',').join('').trim()
+                }
+                );
+            }
+        }
+      return basket;
+    }
+
 
     // Add script here
     console.log('hey there personify')

@@ -102,11 +102,11 @@
     }
   ],
   "settingsSchema": {
-    "title": "YOUR APP NAME",
+    "title": "personifyxp-integration",
     "type": "object",
     "properties": {
       "username": {
-        "title": "SAMPLE FIELD",
+        "title": "username",
         "description": "Please enter your name",
         "type": "string"
       }
