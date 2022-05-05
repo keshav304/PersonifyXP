@@ -1,0 +1,11 @@
+.item {
+    background-color: #F6F6F4;
+    margin: 0 20px;
+    margin-bottom: 20px;
+}
+.list {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 100px;
+}

@@ -1,21 +1,41 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#demo",
+      // "list-context.image-list#demo",
+      "rich-text#home",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "personify",
       "__fold__.experimentalLazyAssets",
-      "flex-layout.row#deals",
-      "rich-text#shelf-title",
-      "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      // "flex-layout.row#deals",
+      // "rich-text#shelf-title",
+      "flex-layout.row#category-products-row"
+      // "info-card#home",
+      // "rich-text#question",
+      // "rich-text#link",
+      // "newsletter"
     ]
   },
-
+  "flex-layout.row#category-products-row": {
+    "children": [
+      "flex-layout.col#categories",
+      "flex-layout.col#shelf"
+    ],
+    "props": {
+      "blockClass": "categoryProductsRow"
+    }
+  },
+  "flex-layout.col#categories": {
+    "children": [
+      "category-menu#category-menu"
+    ],
+    "props": {
+      "width": {
+        "mobile": "100%",
+        "desktop": "13%"
+      },
+      "horizontalAlign": "center"
+    }
+  },
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
     "props": {
@@ -51,16 +71,39 @@
       "blockClass": "shelfTitle"
     }
   },
-  "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
+  "flex-layout.col#shelf": {
+    "children": ["list-context.product-list#demo1"],
+    "props": {
+      "width": {
+        "mobile": "100%",
+        "desktop": "80%"
+      }
+    }
   },
   "list-context.product-list#demo1": {
     "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#demo-products"],
+    "children": ["list-context-renderer#wrapped"],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
+      "orderBy": "OrderByTopSaleDESC",
+      "blockClass":"productsList"
     }
   },
+  "list-context-renderer#wrapped": {
+    "props": {
+      "listElement": "div",
+      "itemElement": "div"
+    }
+  },
+  "category-menu#category-menu": {
+      "props": {
+        "showAllDepartments": true,
+        "showSubcategories": false,
+        "menuDisposition": "left",
+        "departments": [],
+        "sortSubcategories": "name",
+        "blockClass":"categoryMenu"
+      }
+    },
   "slider-layout#demo-products": {
     "props": {
       "itemsPerPage": {
@@ -87,7 +130,16 @@
       "textAlignment": "center"
     }
   },
-
+  "rich-text#home": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "## PersonifyHome",
+      "textColor": "black",
+      "font": "t-heading-5",
+      "blockClass": "home-text"
+    }
+  },
   "rich-text#question": {
     "props": {
       "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",

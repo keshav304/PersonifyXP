@@ -1,13 +1,13 @@
 {
   "vtex.menu@2.x:menu#websites": {
     "children": [
-      "menu-item#shop",
-      "menu-item#about-us"
+      "menu-item#login",
+      "menu-item#signup"
     ]
   },
-  "menu-item#shop": {
+  "menu-item#login": {
     "props": {
-      "id": "menu-item-shop",
+      "id": "menu-item-login",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -15,8 +15,23 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Shop",
-        "text": "Shop"
+        "tagTitle": "login",
+        "text": "Log in"
+      }
+    }
+  },
+  "menu-item#signup": {
+    "props": {
+      "id": "menu-item-signup",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "signup",
+        "text": "Sign up"
       }
     }
   },

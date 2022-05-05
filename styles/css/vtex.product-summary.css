@@ -40,3 +40,7 @@
 .image {
   border-radius: 0.25rem;
 }
+.element {
+  max-width: 222px;
+  padding: 15px;
+}

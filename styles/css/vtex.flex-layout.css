@@ -48,7 +48,6 @@
 .flexRow--deals .stretchChildrenWidth {
   align-items: center;
 }
-
 .flexRow--deals .flexCol {
   align-items: center;
 }
@@ -56,6 +55,13 @@
 .flexCol--filterCol {
   max-width: 500px;
   min-width: 230px;
+}
+.flexRowContent--categoryProductsRow {
+  justify-content: space-around;
+}
+.flexRowContent--priceFlexContainer {
+  display: flex;
+  justify-content: center;
 }
 
 .flexCol--productCountCol {
@@ -91,4 +97,7 @@
 
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
+}
+.vtex-category-menu-2-x-section--department {
+  margin-bottom: 60px;
 }
