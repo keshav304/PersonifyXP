@@ -106,8 +106,8 @@
     "type": "object",
     "properties": {
       "username": {
-        "title": "username",
-        "description": "Please enter your name",
+        "title": "userid",
+        "description": "Please enter your personifyxp id",
         "type": "string"
       }
     }
