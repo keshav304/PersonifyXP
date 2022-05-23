@@ -10,3 +10,17 @@
     flex-wrap: wrap;
     padding-left: 100px;
 }
+@media screen and (max-width: 500px) {
+    .item {
+        background-color: #fff;
+        margin: 0 20px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .list {
+        min-height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 49px;
+    }
+  }

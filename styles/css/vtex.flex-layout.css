@@ -59,6 +59,14 @@
 .flexRowContent--categoryProductsRow {
   justify-content: space-around;
 }
+@media screen and (max-width: 500px) {
+  .flexRowContent--categoryProductsRow {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
 .flexRowContent--priceFlexContainer {
   display: flex;
   justify-content: flex-start;
