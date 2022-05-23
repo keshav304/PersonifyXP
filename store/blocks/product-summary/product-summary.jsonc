@@ -78,6 +78,7 @@
   "product-selling-price#summary": {
     "props": {
       "blockClass": "summary"
+      
     }
   },
   "product-price-savings#summary": {

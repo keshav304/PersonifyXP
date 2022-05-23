@@ -42,7 +42,8 @@
     },
     "children": [
       "vtex.menu@2.x:menu#websites",
-      "flex-layout.col#spacer"
+      "flex-layout.col#spacer",
+      "minicart.v2"
       // "vtex.menu@2.x:menu#institutional"
     ]
   },

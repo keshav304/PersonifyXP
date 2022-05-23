@@ -1,0 +1,24 @@
+.productRecsContainer {
+    margin-bottom: 120px;
+    margin: auto;
+    width: 90%;
+}
+.productRecsHeading {
+    text-align: center;
+}
+.productImg {
+    height: 285px;
+    width: 100%;
+}
+.productPrice {
+    font-weight: 600;
+    font-size: 18px;
+    color: #2E2E2E;
+    text-align: center;
+}
+.productName {
+    font-weight: 600;
+    font-size: 18px;
+    color: #2E2E2E;
+    text-align: center;
+}

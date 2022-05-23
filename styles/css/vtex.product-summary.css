@@ -20,12 +20,12 @@
 .nameContainer {
   justify-content: start;
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 5px;
 }
 
 .brandName {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   color: #2E2E2E;
 }
 
@@ -41,6 +41,6 @@
   border-radius: 0.25rem;
 }
 .element {
-  max-width: 222px;
+  max-width: 100%;
   padding: 15px;
 }

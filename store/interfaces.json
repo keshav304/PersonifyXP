@@ -4,5 +4,14 @@
   },
   "personify": {
     "component": "hWStore"
+  },
+  "personify-personalised-products":{
+    "component": "PersonalisedProducts"
+  },
+  "personify-product-recs": {
+    "component":"ProductRecs"
+  },
+  "personify-cart-bundle-recs": {
+    "component":"CartBundleRecs"
   }
 }

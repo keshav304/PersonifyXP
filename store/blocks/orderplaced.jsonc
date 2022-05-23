@@ -1,6 +1,6 @@
 {
   "order-placed": {
-    "blocks": ["op-header", "op-order"]
+    "blocks": []
   },
   "op-header": {
     "children": [

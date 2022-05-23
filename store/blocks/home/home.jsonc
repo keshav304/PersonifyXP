@@ -3,6 +3,7 @@
     "blocks": [
       // "list-context.image-list#demo",
       "rich-text#home",
+      "personify-personalised-products",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
