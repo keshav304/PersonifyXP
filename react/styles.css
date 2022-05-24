@@ -25,9 +25,9 @@
 .bannersContainer {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-left: 10%;
 }
 .bannerImg {
-    width: 45%;
+    width: 75%;
     margin-bottom: 25px;
 }

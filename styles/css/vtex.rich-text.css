@@ -88,3 +88,7 @@
     line-height: 1.3em;
   }
 }
+.heading-level-3 {
+  font-size: 20px;
+  margin-left: 40px;
+}

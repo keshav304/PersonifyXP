@@ -40,6 +40,7 @@
   },
   "flex-layout.col#categories": {
     "children": [
+      "rich-text#category",
       "category-menu#category-menu"
     ],
     "props": {
@@ -47,7 +48,8 @@
         "mobile": "100%",
         "desktop": "13%"
       },
-      "horizontalAlign": "center"
+      "horizontalAlign": "center",
+      "blockClass": "category-col"
     }
   },
   "list-context.image-list#demo": {
@@ -153,6 +155,16 @@
       "textColor": "black",
       "font": "t-heading-5",
       "blockClass": "home-text"
+    }
+  },
+  "rich-text#category": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "### Shop by Product",
+      "textColor": "black",
+      "font": "t-heading-4",
+      "blockClass": "category-text"
     }
   },
   "rich-text#question": {
