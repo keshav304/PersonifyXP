@@ -4,4 +4,8 @@
 }
 .section--department {
   padding-left: 50px;
+  display: block;
+}
+.departmentList {
+  display: contents;
 }

@@ -3,7 +3,7 @@
     "blocks": [
       // "list-context.image-list#demo",
       "rich-text#home",
-      "personify-banners",
+      "flex-layout.row#category-banners-row",
       "personify-personalised-products",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
@@ -17,9 +17,21 @@
       // "newsletter"
     ]
   },
-  "flex-layout.row#category-products-row": {
+  "flex-layout.row#category-banners-row": {
+    "props": {
+      "colGap": 2,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "marginBottom": 4,
+      "blockClass": "category-banner-row"
+    },
     "children": [
       "flex-layout.col#categories",
+      "personify-banners"
+    ]
+  },
+  "flex-layout.row#category-products-row": {
+    "children": [
       "flex-layout.col#shelf"
     ],
     "props": {
@@ -98,11 +110,12 @@
   },
   "category-menu#category-menu": {
       "props": {
-        "showAllDepartments": true,
+        "showAllDepartments": false,
         "showSubcategories": false,
-        "menuDisposition": "left",
+        "menuDisposition": "center",
         "departments": [],
         "sortSubcategories": "name",
+        "mobilemode":true,
         "blockClass":"categoryMenu"
       }
     },
