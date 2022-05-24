@@ -5,6 +5,9 @@
   "personify": {
     "component": "hWStore"
   },
+  "personify-banners": {
+    "component": "Banners"
+  },
   "personify-personalised-products":{
     "component": "PersonalisedProducts"
   },

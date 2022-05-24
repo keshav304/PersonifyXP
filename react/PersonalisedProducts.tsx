@@ -15,11 +15,6 @@ const PersonalisedProducts = () => {
         centerMode="center"
       >
         <Product
-          image='https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2hhaXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
-          price="£ 100.00"
-          name="Product 1"
-        />
-        <Product
           image="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2hhaXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
           name="Product 2"
           price="£ 100.00"

@@ -16,11 +16,12 @@
         margin: 0 20px;
         margin-bottom: 20px;
         width: 100%;
+        margin-left: 0px;
     }
     .list {
         min-height: 100vh;
         display: flex;
         flex-wrap: wrap;
-        padding-left: 49px;
+        padding-left: 0px;
     }
   }
