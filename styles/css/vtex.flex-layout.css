@@ -112,3 +112,7 @@
 .vtex-category-menu-2-x-section--department {
   margin-bottom: 60px;
 }
+.flexRowContent--menu-link {
+  background-color: white;
+  color:#000000;
+}
