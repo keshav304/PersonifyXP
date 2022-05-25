@@ -1,7 +1,7 @@
 .productRecsContainer {
-    margin-bottom: 120px;
     margin: auto;
-    width: 90%;
+    width: 85%;
+    margin-bottom: 50px;
 }
 .productRecsHeading {
     text-align: center;

@@ -27,7 +27,8 @@
     },
     "children": [
       "flex-layout.col#categories",
-      "personify-banners"
+      "personify-banners",
+      "search-bar"
     ]
   },
   "flex-layout.row#category-products-row": {
