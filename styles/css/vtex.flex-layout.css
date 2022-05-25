@@ -57,7 +57,7 @@
   min-width: 230px;
 }
 .flexRowContent--categoryProductsRow {
-  justify-content: space-around;
+  padding-left: 10%;
 }
 @media screen and (max-width: 500px) {
   .flexRowContent--categoryProductsRow {
