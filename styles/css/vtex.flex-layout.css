@@ -71,14 +71,7 @@
   display: flex;
   justify-content: flex-start;
 }
-.flexColChild--category-col {
-  height: auto !important;
-}
-.flexCol--category-col {
-  position: fixed;
-  left: 0;
-  width: 15%;
-}
+
 
 .flexCol--productCountCol {
   align-items: flex-start;

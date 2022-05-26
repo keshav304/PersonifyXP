@@ -26,7 +26,7 @@
       "blockClass": "category-banner-row"
     },
     "children": [
-      "flex-layout.col#categories",
+      "sticky-layout#categories",
       "personify-banners",
       "search-bar"
     ]
@@ -39,7 +39,12 @@
       "blockClass": "categoryProductsRow"
     }
   },
-  "sticky-layout#categories":{},
+  "sticky-layout#categories": {
+    "props": {
+      "position": "top"
+    },
+    "children": ["flex-layout.col#categories"]
+  },
   "flex-layout.col#categories": {
     "children": [
       "rich-text#category",
