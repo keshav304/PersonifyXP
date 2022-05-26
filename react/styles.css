@@ -1,3 +1,9 @@
+.productRecsContainerHome {
+    width: 82%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: 3%;
+}
 .productRecsContainer {
     margin: auto;
     width: 85%;
@@ -27,23 +33,24 @@
     list-style: none;
     justify-content: space-evenly;
     width: 50%;
-    margin-left: 10%;
+    margin-left: 13%;
 }
 .bannersContainer {
     display: flex;
     flex-direction: column;
-    margin-left: 10%;
+    margin-left: 20%;
 }
 .bannerImg {
-    width: 75%;
+    width: 80%;
     margin-bottom: 25px;
+    margin-left: 86px;
 }
 .homeBannerHeading {
     font-size: 21px;
     font-weight: 600;
     text-align: center;
     width: 70%;
-    margin: 25px 0px;
+    margin: 25px 63px;
     letter-spacing: 0.4px;
 }
 .bannerCategory {

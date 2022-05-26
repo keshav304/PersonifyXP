@@ -57,7 +57,7 @@
   min-width: 230px;
 }
 .flexRowContent--categoryProductsRow {
-  padding-left: 10%;
+  padding-left: 15%;
 }
 @media screen and (max-width: 500px) {
   .flexRowContent--categoryProductsRow {
@@ -72,7 +72,12 @@
   justify-content: flex-start;
 }
 .flexColChild--category-col {
-  height: 3% !important;
+  height: auto !important;
+}
+.flexCol--category-col {
+  position: fixed;
+  left: 0;
+  width: 15%;
 }
 
 .flexCol--productCountCol {

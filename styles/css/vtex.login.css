@@ -1,0 +1,9 @@
+.container button:nth-child(odd)  {
+    background-color: #fff;
+}
+.label {
+    text-transform: capitalize;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}

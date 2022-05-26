@@ -1,8 +1,7 @@
 {
   "vtex.menu@2.x:menu#websites": {
     "children": [
-      "menu-item#login",
-      "menu-item#signup"
+      "login"
     ]
   },
   "menu-item#login": {
@@ -53,6 +52,17 @@
         "tagTitle": "visit vtex.com",
         "text": "visit vtex.com"
       }
+    }
+  },
+  "login": {
+    "props": {
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Acess Code LOG-IN",
+      "emailPlaceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true,
+      "mirrorTooltipToRight": true,
+      "showIconProfile":true
     }
   }
 }

@@ -39,6 +39,7 @@
       "blockClass": "categoryProductsRow"
     }
   },
+  "sticky-layout#categories":{},
   "flex-layout.col#categories": {
     "children": [
       "rich-text#category",

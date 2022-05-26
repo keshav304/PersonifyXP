@@ -9,3 +9,7 @@
 .departmentList {
   display: contents;
 }
+.departmentLink {
+      color: black;
+      font-size: 16px;
+}

@@ -47,6 +47,7 @@
       // "vtex.menu@2.x:menu#institutional"
     ]
   },
+
   "flex-layout.col#spacer": {
     "props": {
       "width": "grow"

@@ -1,15 +1,15 @@
 .item {
     background-color: #fff;
-    margin: 0 20px;
+    width: 28%;
+    margin: 0px 33px;
     margin-bottom: 20px;
-    width: 27%;
 }
 .list {
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding-left: 80px;
+    padding-left: 22px;
 }
 @media screen and (max-width: 500px) {
     .item {

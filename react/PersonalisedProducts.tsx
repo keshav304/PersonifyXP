@@ -4,15 +4,17 @@ import styles from './styles.css'
 import Product from './components/Product'
 
 const PersonalisedProducts = () => {
+  
   return (
-    <div className={styles.productRecsContainer}>
+    <div className={styles.productRecsContainerHome}>
       <h3 className={styles.productRecsHeading}>Produtct you may like </h3>
       <SliderLayout
         label='Product Recommendations'
         showNavigationArrows="always"
         showPaginationDots="desktopOnly"
-        itemsPerPage={{ desktop: 5, tablet: 3, phone: 1 }}
+        itemsPerPage={{ desktop: 4, tablet: 3, phone: 1 }}
         centerMode="center"
+        fullWidth={false}
       >
         <Product
           image="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2hhaXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
