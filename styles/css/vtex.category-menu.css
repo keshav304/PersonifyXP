@@ -3,7 +3,7 @@
   display:flex !important;
 }
 .section--department {
-  padding-left: 50px;
+  padding-left: 4px;
   display: block;
 }
 .departmentList {
@@ -12,4 +12,5 @@
 .departmentLink {
       color: black;
       font-size: 16px;
+      text-align: left;
 }
