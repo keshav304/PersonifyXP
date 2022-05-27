@@ -4,7 +4,7 @@ import styles from './styles.css'
 import Product from './components/Product'
 
 const PersonalisedProducts = () => {
-  
+
   return (
     <div className={styles.productRecsContainerHome}>
       <h3 className={styles.productRecsHeading}>Produtct you may like </h3>

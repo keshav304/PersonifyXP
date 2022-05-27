@@ -4,3 +4,6 @@
   .wrapper--stuck .container {
     width: 15%;
   }
+  .wrapper {
+    position: absolute !important;
+  }

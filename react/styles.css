@@ -33,17 +33,16 @@
     list-style: none;
     justify-content: space-evenly;
     width: 50%;
-    margin-left: 13%;
+    margin-left: 7%;
 }
 .bannersContainer {
     display: flex;
     flex-direction: column;
-    margin-left: 20%;
+    margin-left: 26%;
 }
 .bannerImg {
-    width: 80%;
+    width: 100%;
     margin-bottom: 25px;
-    margin-left: 86px;
 }
 .homeBannerHeading {
     font-size: 21px;
@@ -57,4 +56,8 @@
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.3px;
+}
+.bannerContentContainer {
+    width: 90%;
+    margin-top: 30px;
 }
