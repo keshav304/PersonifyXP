@@ -16,5 +16,8 @@
   },
   "personify-cart-bundle-recs": {
     "component":"CartBundleRecs"
+  },
+  "personify-header-categories": {
+    "component":"HeaderCategories"
   }
 }

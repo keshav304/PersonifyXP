@@ -1,6 +1,8 @@
 {
   "store.product": {
     "children": [
+      "rich-text#home",
+      "flex-layout.row#header",
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
       "flex-layout.row#description",
@@ -11,6 +13,30 @@
       "product-reviews",
       "product-questions-and-answers"
     ]
+  },
+  "flex-layout.col#header":{
+    "children": [
+      "personify-header-categories",
+      "search-bar"
+    ],
+    "props": {
+      "width": {
+        "mobile": "100%",
+        "desktop": "13%"
+      },
+      "horizontalAlign": "center",
+      "blockClass": "category-col"
+    }
+  },
+  "rich-text#home": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "## PersonifyHome",
+      "textColor": "black",
+      "font": "t-heading-5",
+      "blockClass": "home-text"
+    }
   },
   "flex-layout.row#specifications-title": {
     "children": ["rich-text#specifications"]

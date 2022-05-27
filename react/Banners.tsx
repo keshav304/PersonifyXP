@@ -1,4 +1,5 @@
 import React from 'react';
+import HeaderCategories from './HeaderCategories';
 import styles from './styles.css'
 
 const Banners = () => {
@@ -7,12 +8,7 @@ const Banners = () => {
       <div className={styles.categoriesContainer}>
 
       </div>
-        <ul className={styles.categoryContainer}>
-            <li className={styles.bannerCategory}>Room</li>
-            <li className={styles.bannerCategory}>Appreal</li>
-            <li className={styles.bannerCategory}>sporting</li>
-            <li className={styles.bannerCategory}>Food and beverages</li>
-        </ul>
+      <HeaderCategories/>
         <div className={styles.bannerContentContainer}>
         <img className={styles.bannerImg} src='https://i.imgur.com/mK8MbDU.jpg' />
         <img className={styles.bannerImg} src='https://i.imgur.com/iUkqlQf.jpg' />
