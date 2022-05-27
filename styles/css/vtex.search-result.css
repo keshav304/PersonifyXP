@@ -20,3 +20,16 @@
 .galleryItem--list {
   border-bottom: 1px #E7E9EE solid;
 }
+.gallery--grid {
+  justify-content: space-around;
+}
+.galleryItem--grid {
+  margin: 0px 20px
+}
+.galleryTitle--layout{
+  margin-left: 30%;
+  font-size: 26px;
+}
+.totalProducts--layout{
+  margin-left: 75%;
+}

@@ -116,3 +116,9 @@
   background-color: white;
   color:#000000;
 }
+.flexColChild--filterCol {
+  margin-left: 30px;
+}
+.flexRowContent--orderByAndSwitcher {
+  padding-right: 27%;
+}
