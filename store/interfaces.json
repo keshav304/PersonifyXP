@@ -19,5 +19,8 @@
   },
   "personify-header-categories": {
     "component":"HeaderCategories"
+  },
+  "personify-others-also-bought":{
+    "component":"OthersAlsoBought"
   }
 }

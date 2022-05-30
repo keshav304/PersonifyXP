@@ -1,20 +1,21 @@
 {
   "store.product": {
     "children": [
-      "rich-text#home",
-      "flex-layout.row#header",
+      "rich-text#personifyHeader",
+      "flex-layout.row#personifyHeader",
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
       "flex-layout.row#description",
       "flex-layout.row#specifications-title",
       "product-specification-group#table",
       "shelf.relatedProducts",
+      "personify-others-also-bought",
       "personify-product-recs",
       "product-reviews",
       "product-questions-and-answers"
     ]
   },
-  "flex-layout.col#header":{
+  "flex-layout.row#personifyHeader":{
     "children": [
       "personify-header-categories",
       "search-bar"
@@ -28,7 +29,7 @@
       "blockClass": "category-col"
     }
   },
-  "rich-text#home": {
+  "rich-text#personifyHeader": {
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
