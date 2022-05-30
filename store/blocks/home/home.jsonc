@@ -27,8 +27,7 @@
     },
     "children": [
       "sticky-layout#categories",
-      "personify-banners",
-      "search-bar"
+      "personify-banners"
     ]
   },
   "flex-layout.row#category-products-row": {

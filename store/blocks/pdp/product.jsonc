@@ -17,8 +17,7 @@
   },
   "flex-layout.row#personifyHeader":{
     "children": [
-      "personify-header-categories",
-      "search-bar"
+      "personify-header-categories"
     ],
     "props": {
       "width": {

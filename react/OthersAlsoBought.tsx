@@ -7,7 +7,7 @@ const OthersAlsoBought = () => {
 
   return (
     <div className={styles.productRecsContainer}>
-      <h3 className={styles.productRecsHeading}>PersonifyXP Products Recommendations </h3>
+      <h3 className={styles.productRecsHeading}>Others Also Bought </h3>
       <SliderLayout
         label='Product Recommendations'
         showNavigationArrows="always"
